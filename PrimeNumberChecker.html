@@ -1,0 +1,28 @@
+<html>
+<head> <title>Prime Number Checker</title></head>
+<body>
+<script>
+var input = prompt("Please enter the number:");
+	document.writeln(input+"<br>");
+
+var sqrt = Math.sqrt(input);
+	document.writeln(sqrt+"<br>");
+sqrt = Math.floor(sqrt);
+	document.writeln(sqrt+"<br>");
+var checker = 0;
+for(var i = 1; i<=sqrt; i++){
+
+	document.writeln(i+"<br>");
+	if(input%i == 0){
+		checker++;
+	}
+}
+if(checker == 1){
+	document.writeln("YES");
+}
+else{
+	document.writeln("NO");
+}
+</script>
+</body>
+</html>
